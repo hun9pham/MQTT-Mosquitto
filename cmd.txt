@@ -1,0 +1,17 @@
+Mở Terminal :
+1. Windows + R : cmd
+2. cd C:\mosquitto
+3. mosquitto.exe
+
+
+SUB SENSOR
+PUB CONTROL
+
+Commands:
+<Subcribe> 
+mosquitto_sub.exe –h 192.168.1.7 -p 1883 –t SENSOR
+
+<Publish> 
+mosquitto_pub.exe -h 192.168.1.7 -p 1883 -t CONTROL-m "LED ON"
+
+
